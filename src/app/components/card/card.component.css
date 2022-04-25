@@ -1,0 +1,14 @@
+.espacio{
+    margin: 20px;
+    margin: auto;
+}
+div{
+    border-radius: 20px;
+    padding: 5px;
+}
+p{
+    padding: 5px;
+}
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

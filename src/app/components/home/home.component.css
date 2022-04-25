@@ -1,0 +1,9 @@
+img {
+    height: 450px;
+    
+    object-fit: cover;
+   
+    }
+figure{
+    padding: 0px !important;
+}
