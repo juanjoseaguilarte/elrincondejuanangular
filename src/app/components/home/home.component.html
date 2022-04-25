@@ -1,11 +1,59 @@
-<div class="container">
-    <div class="row">
-        
-            <figure>
-                
-                <img *ngFor="let numero of arrNumeros" class="col-12 col-md-5 col-xl-3 img-fluid" [src]="'./assets/images/foto' + numero + '.jpg'" alt="">
- 
-            </figure>
-        </div>
-        
+<div
+  id="carouselExampleSlidesOnly"
+  class="carousel slide"
+  data-bs-ride="carousel"
+>
+  <div class="carousel-inner">
+    <div
+      class="carousel-item"
+      *ngFor="let numero of arrNumeros; let i = index"
+      [ngClass]="{ active: i == 0 }"
+    >
+      <img
+        [src]="'./assets/images/foto' + numero + '.jpg'"
+        class="d-block w-100"
+        alt="..."
+      />
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12 col-md-4 bg-uno art">
+    <h2 class="m-3 h2height">CONÓCENOS</h2>
+    <p class="m-3">
+      El Rincón De Juan The Wine Bar en pleno centro de La Línea De La
+      Concepción
+    </p>
+  </div>
+  <div class="col-12 col-md-4 bg-dos art">
+    <h2 class="m-3 h2height">REDES</h2>
+    <p class="m-3">
+      Nos encanta las redes sociales
+      <br />
+      Síguenos!!
+    </p>
+  </div>
+  <div class="col-12 col-md-4 bg-tres art">
+    <h2 class="m-3 h2height">CONÓCENOS</h2>
+    <p class="m-3">
+      El Rincón De Juan The Wine Bar en pleno centro de La Línea De La
+      Concepción
+    </p>
+  </div>
+</div>
+<div class="row">
+  <div class="col art2 bg-dos">
+    <h2 class="m-3 h2height">
+      <p class="text-md-center">CONTÁCTANOS</p>
+      <p class="h5 text-md-center">Calle Méndez Núñez 3</p>
+      <p class="h5 text-md-center">11300 La Línea De La Concepción. Cádiz</p>
+      <p class="h5 text-md-center">Reservas: +34 678 40 12 53</p>
+      <p class="h5 text-md-center">barelrincon@gmail.com</p>
+    </h2>
+  </div>
 </div>

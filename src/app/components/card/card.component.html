@@ -1,34 +1,9 @@
-<!-- 
-      <table class="container-fluid table">
-        <thead class="">
-          <tr class="">
-            <th scope="col" class="col-8">Plato</th>
-            <th scope="col" class="col-4 text-end">Precio</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr  (click)="open($event)" *ngFor="let plato of arrComidas">
-            <td >{{ plato.plato }}</td>
-            <td class="d-flex flex-column ">
-              <span class="d-block ms-auto"
-                >R - {{ plato.formato_racion }} €</span>
-              <span
-                *ngIf="plato.formato_media !== 0"
-                class="d-inline-block ms-auto"
-                >M - {{ plato.formato_media }} €
-              </span>
-              <span *ngIf="plato.formato_media !== 0" class="d-block ms-auto"
-                >T - {{ plato.formato_tapa }} €
-              </span>
-            </td>
-          </tr>
-        </tbody>
-      </table> -->
-      <div class="shadow d-flex no-wrap "*ngFor="let plato of arrComidas">
+
+      <div class="d-flex no-wrap "*ngFor="let plato of arrComidas">
         <div class="col-8 ">
               <p>{{ plato.plato }}</p>
         </div>
-        <div class="col-4">
+        <div class="col-3">
             <p class="d-flex flex-column ">
                     <span class="d-block ms-auto"
                     >R - {{ plato.formato_racion }} €</span>

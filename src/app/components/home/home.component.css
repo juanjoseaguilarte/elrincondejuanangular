@@ -4,6 +4,35 @@ img {
     object-fit: cover;
    
     }
-figure{
-    padding: 0px !important;
+.art{
+    height: 250px;
+    color: white;
+}
+.art2{
+    height: 250px;
+    color: white;
+}
+.h2height{
+    font-weight: 700;
+}
+.bg-uno{
+    background-color: grey;
+}
+.bg-dos{
+    background-color: rgb(34, 33, 33);
+}
+.bg-tres{
+    background-color: grey;
+}
+
+@media (max-width: 578px){
+    .art{
+        height: 150px;
+    }
+    
+}
+@media (min-width: 750px){
+    img{
+        height: 90vh;
+    }
 }

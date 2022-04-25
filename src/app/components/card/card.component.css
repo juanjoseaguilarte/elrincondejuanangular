@@ -1,14 +1,12 @@
-.espacio{
-    margin: 20px;
-    margin: auto;
-}
+
 div{
     border-radius: 20px;
+    border-color:  2px solid #e2de18;
     padding: 5px;
+    background-color: #04642f;
+    color:  white;
+    margin-bottom: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
-p{
-    padding: 5px;
-}
-*{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+
