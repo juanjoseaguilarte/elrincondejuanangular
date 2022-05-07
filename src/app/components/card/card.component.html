@@ -1,22 +1,33 @@
-
-      <div class="d-flex no-wrap "*ngFor="let plato of arrComidas">
+      <div class="d-flex no-wrap tab" *ngFor="let plato of arrComidas">
         <div class="col-8 ">
-              <p>{{ plato.plato }}</p>
+              <p class="mayusculas animate__bounceIn"  [ngClass]="{'new': plato.new === true,'top': plato.top === true }">{{ plato.plato }}</p>
+              <p *ngIf="english === true" class="rojo">{{ plato.plato_ingles }}</p>
+              <span *ngIf="alergic === true" class="rojo">{{ plato.alergenos}}</span>
         </div>
         <div class="col-3">
             <p class="d-flex flex-column ">
                     <span class="d-block ms-auto"
-                    >R - {{ plato.formato_racion }} €</span>
+                    >{{ plato.formato_racion }} €</span>
                     <span
                     *ngIf="plato.formato_media !== 0"
                     class="d-inline-block ms-auto"
-                    >M - {{ plato.formato_media }} €
+                    >1/2 - {{ plato.formato_media }} €
                 </span>
-                <span *ngIf="plato.formato_media !== 0" class="d-block ms-auto"
+                <!-- <span *ngIf="plato.formato_media !== 0" class="d-block ms-auto"
                 >T - {{ plato.formato_tapa }} €
-            </span>
+            </span> -->
         </p>
     </div>
 
       </div>
+      <div class="centrarBoton">
+    <div class="btn btn-warning botonIngles p-2" (click)="idioma()">
+    <span class="" *ngIf="english === true">Solo Español</span>
+    <span class="" *ngIf="english === false">Inglés</span>
+</div>
+<div class="btn btn-warning botonIngles p-2" (click)="alergeno()">
+    <span class="" *ngIf="alergic === false">Alergicos</span>
+    <span class="" *ngIf="alergic === true">Ocultar</span>
+</div>
+</div>
 

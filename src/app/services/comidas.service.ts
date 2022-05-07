@@ -9,13 +9,22 @@ export class ComidasService {
 
   private arrComidas: Comida[];
 
-  constructor(
-    ) {
+  constructor() {
     this.arrComidas = COMIDAS
-
    }
 
-  getAll(): Comida[]{
-    return this.arrComidas;
+  getAll(pComida: string = ""): Comida[]{
+    //console.log(pComida)
+    this.arrComidas = COMIDAS;
+    if (!pComida || pComida == '') {
+      return this.arrComidas;
+    }
+    return (this.arrComidas = this.arrComidas.filter(
+      (section) => section.seccion.includes(pComida)
+    ));
   }
-}
+ 
+  
+  }
+
+
