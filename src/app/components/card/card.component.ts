@@ -15,7 +15,8 @@ export class CardComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
+  
   open(event: any): void {
     console.log(event.target.innerHTML);
   }

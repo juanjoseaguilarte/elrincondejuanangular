@@ -50,5 +50,6 @@ export class CartaComponent implements OnInit {
   getSection() {
     
   }
+  
 
 }
