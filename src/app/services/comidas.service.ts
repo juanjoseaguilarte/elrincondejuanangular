@@ -23,8 +23,6 @@ export class ComidasService {
       (section) => section.seccion.includes(pComida)
     ));
   }
- 
-  
   }
 
 

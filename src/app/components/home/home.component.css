@@ -1,16 +1,16 @@
 img {
     height: 450px;
-    
     object-fit: cover;
-   
     }
 .art{
     height: 250px;
     color: white;
+
 }
 .art2{
     height: 250px;
     color: white;
+
 }
 .h2height{
     font-weight: 700;
@@ -20,14 +20,32 @@ img {
 }
 .bg-dos{
     background-color: rgb(34, 33, 33);
+    
 }
 .bg-tres{
     background-color: grey;
 }
+.fa-whatsapp{
+    color: #25D366;
+}
+.espaciofijo{
+    display: inline-block;
+    width: 75px;
+}
+.nodecoration{
+    color: white;
+}
+footer{
+        width: 100%;
+}
+.contenido{
+    font-size: 0.9rem;
+}
 
 @media (max-width: 578px){
     .art{
-        height: 150px;
+        height: 220px;
+        width: 100%;
     }
     
 }
@@ -35,4 +53,15 @@ img {
     img{
         height: 90vh;
     }
+}
+
+.marginizquierdo{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.diaActivo{
+    background-color: rgb(34, 33, 33);
+    margin-left: -5px;
+   padding: 5px;;
 }

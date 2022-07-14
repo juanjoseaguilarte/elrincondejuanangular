@@ -11,45 +11,105 @@
     >
       <img
         [src]="'./assets/images/foto' + numero + '.jpg'"
-        class="d-block w-100"
+        class="w-100"
         alt="..."
       />
     </div>
   </div>
 </div>
 
-<div class="row">
+<!-- 3 SECCIONES -->
+<div class="row ps-0 marginizquierdo">
+  <!-- CONOCENOS -->
   <div class="col-12 col-md-4 bg-uno art">
     <h2 class="m-3 h2height">CONÓCENOS</h2>
-    <p class="m-3">
+    <p class="m-3 contenido">
       El Rincón De Juan The Wine Bar en pleno centro de La Línea De La
-      Concepción
+      Concepción junto a la plaza de la iglesia Inmaculada Concepción. <br />
+      Disponemos de terraza con mesas altas y bajas. <br />
+      En nuestro interior disponemos de mesas bajas y barra
     </p>
   </div>
-  <div class="col-12 col-md-4 bg-dos art">
+  <!-- REDES SOCIALES -->
+<div class="col-12 col-md-4 bg-dos art">
     <h2 class="m-3 h2height">REDES</h2>
-    <p class="m-3">
+    <p class="m-3 contenido">
       Nos encanta las redes sociales
       <br />
       Síguenos!!
+      <br />
     </p>
-  </div>
-  <div class="col-12 col-md-4 bg-tres art">
-    <h2 class="m-3 h2height">CONÓCENOS</h2>
-    <p class="m-3">
-      El Rincón De Juan The Wine Bar en pleno centro de La Línea De La
-      Concepción
-    </p>
+    <div class="d-flex align-self-end mt-5">
+
+      <a
+      class=""
+      href="https://www.facebook.com/ELRINCONDEJUANTHEWINEBAR"
+      target="_blank"
+      ><i class="m-3 me-3 h1 fa-brands fa-facebook-square nodecoration"></i
+        ></a>
+        <a
+        class=""
+        href="https://www.instagram.com/elrincondejuanthewinebar/"
+        target="_blank"
+        ><i class="mt-3 h1 fa-brands fa-instagram nodecoration"></i
+          ></a>
+      </div>
+</div>
+<!-- HORARIOS -->
+<div class="col-12 col-md-4 bg-tres art2">
+    <h2 class="m-3 h2height">HORARIOS</h2>
+    <div class="m-3 d-flex flex-column contenido">
+      <div [ngClass]="[dia === 'lunes' ? 'diaActivo' : 'nada' ]">
+        <span class="espaciofijo">LUNES </span><span> CERRADOS</span></div>
+      <div [ngClass]="[dia === 'martes' ? 'diaActivo' : '' ]">
+        <span class="espaciofijo">MARTES </span
+        ><span> 12:00 - 16:00 a 19:30 - 00:00</span>
+      </div>
+      <div [ngClass]="[dia === 'miercoles' ? 'diaActivo' : '' ]">
+        <span class="espaciofijo">MIERCOLES </span
+        ><span> 12:00 - 16:00 a 19:30 - 00:00</span>
+      </div>
+      <div [ngClass]="[dia === 'jueves' ? 'diaActivo' : '' ]">
+        <span class="espaciofijo">JUEVES </span
+        ><span> 12:00 - 16:00 a 19:30 - 00:00</span>
+      </div>
+      <div [ngClass]="[dia === 'viernes' ? 'diaActivo' : '' ]" >
+        <span class="espaciofijo">VIERNES </span
+        ><span> 12:00 - 16:30 a 19:30 - 00:30</span>
+      </div>
+      <div [ngClass]="[dia === 'sabado' ? 'diaActivo' : '' ]">
+        <span class="espaciofijo">SABADO </span
+        ><span> 12:00 - 16:30 a 19:30 - 00:30</span>
+      </div>
+      <div [ngClass]="[dia === 'domingo' ? 'diaActivo' : '' ]">
+        <span class="espaciofijo">DOMINGO </span
+        ><span> 12:00 - 16:30 a 19:30 - 00:30</span>
+      </div>
+    </div>
   </div>
 </div>
-<div class="row">
+
+<!-- CONTACTANOS -->
+<div class="row marginizquierdo">
   <div class="col art2 bg-dos">
     <h2 class="m-3 h2height">
       <p class="text-md-center">CONTÁCTANOS</p>
       <p class="h5 text-md-center">Calle Méndez Núñez 3</p>
       <p class="h5 text-md-center">11300 La Línea De La Concepción. Cádiz</p>
-      <p class="h5 text-md-center">Reservas: +34 678 40 12 53</p>
+      <p class="h5 text-md-center">
+        Reservas: +34 678 40 12 53
+        <a
+          href="https://api.whatsapp.com/send?phone=34678401253&text=Hola,%20quiero%20hacer%20una%20reserva%20%20mi%20nombre%20es...."
+          ><i class="h3 ms-2 fa-brands fa-whatsapp"></i
+        ></a>
+      </p>
       <p class="h5 text-md-center">barelrincon@gmail.com</p>
     </h2>
+  </div>
+</div>
+<!-- MAPA -->
+<div class="row">
+  <div class="col d-flex justify-content-center bg-uno">
+      <iframe class="m-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d805.2994153320883!2d-5.351899100000049!3d36.16174439999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0cc08a3df2cfa9%3A0xb780e7d4bf914898!2sEl%20Rinc%C3%B3n%20De%20Juan%20THE%20WINEBAR!5e0!3m2!1ses!2ses!4v1652530373314!5m2!1ses!2ses" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 </div>

@@ -1,7 +1,8 @@
       <div class="d-flex no-wrap tab" *ngFor="let vino of arrVinos">
         <div class="col-8 ">
               <p class="mayusculas animate__bounceIn">{{ vino.vino }} -  {{ vino.envejecimiento }} - {{ vino.anada }}</p>
-              <p>{{ vino.uvas }}</p>
+              <p>{{ vino.uvas.join(" - ") }}</p>
+              <span *ngIf="vino.new" [ngClass]="{'new': vino.new === true }"></span>
         </div>
         <div class="col-3">
             <p class="d-flex flex-column ">
@@ -12,9 +13,6 @@
                     class="d-inline-block ms-auto"
                     >Copa - {{ vino.precio_copa | number: '1.2'}} €
                 </span>
-                <!-- <span *ngIf="vino.precio_copa !== 0" class="d-block ms-auto"
-                >T - {{ plato.formato_tapa }} €
-            </span> -->
         </p>
     </div>
 

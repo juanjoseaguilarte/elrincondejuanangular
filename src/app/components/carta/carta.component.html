@@ -1,7 +1,20 @@
+
 <div class="row mt-3 mb-5">
       <div class="col d-flex flex-row flex-wrap justify-content-center">
             <button *ngFor="let seccion of arrSecciones"  class="btn btn-warning m-1 mayuscula" (click)="getAll(seccion)">{{ seccion }}</button>
       </div>
-    
 </div>
-      <app-card class="m-1" [arrComidas]="arrComidas"></app-card>
+
+<div class="row">
+      <div class="col">
+            <h2 class="text-center subrayadoMagico">{{ seccionActual }}</h2>
+            <div class="text-center">
+                  <span class="mayuscula" *ngIf="seccionActual.toLocaleLowerCase() === 'nigiris - maki rolls'">Mínimo 3 Unidades Mezcladas Entre Si</span>
+            </div>
+
+            <div class="text-center">
+                  <span class="mayuscula" *ngIf="seccionActual.toLocaleLowerCase() == 'jamón ibérico de bellota y corte'">crea tu plato de ibéricos, elige 2 a tu gusto</span>
+            </div>
+            <app-card class="m-1" [arrComidas]="arrComidas"></app-card>
+      </div>
+</div>

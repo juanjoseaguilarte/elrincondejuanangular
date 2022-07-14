@@ -8,7 +8,7 @@ export interface Vino {
   denominacion_origen: string;
   precio_copa: number;
   precio_botella: number;
-  top: false;
-  new: false;
-  last: false;
+  top: boolean;
+  new: boolean;
+  last: boolean;
 }

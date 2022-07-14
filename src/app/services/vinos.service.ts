@@ -15,11 +15,17 @@ export class VinosService {
   getAll(pVino: string = ''): Vino[] {
     //console.log(pComida)
     this.arrVinos = VINOS;
+    //Ordeno por precio
+    this.arrVinos.sort(function (a, b) {
+      return a.precio_botella - b.precio_botella
+    });
+
     if (!pVino || pVino == '') {
     return this.arrVinos;
   }
     return (this.arrVinos = this.arrVinos.filter((section) =>
-    section.seccion.includes(pVino)
+      section.seccion.includes(pVino)
+      
   ));
   }
   
