@@ -1,5 +1,5 @@
       <div class="d-flex no-wrap tab" *ngFor="let plato of arrComidas">
-        <div class="col-8 ">
+        <div class="col-8 pad">
               <p class="mayusculas animate__bounceIn"  [ngClass]="{'new': plato.top === true,'top': plato.top === true }">{{ plato.plato }}</p>
               <p *ngIf="english === true" class="rojo">{{ plato.plato_ingles }}</p>
               <span *ngIf="alergic === true" class="rojo">{{ plato.alergenos}}</span>            

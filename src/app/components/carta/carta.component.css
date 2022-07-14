@@ -1,6 +1,7 @@
 .mayuscula{
     text-transform: uppercase;
     font-size: 0.9rem;
+
 }
 .subrayadoMagico{
         background-image: linear-gradient(currentColor, currentColor);
@@ -12,4 +13,13 @@
 .subrayadoMagico:hover,
 .subrayadoMagico:focus {
     background-size: 100% 2px;
+}
+.margin{
+    margin : 1px;
+}
+.isActive{
+    background: blue;
+}
+.btn{
+    padding: 0.3px 5px;
 }

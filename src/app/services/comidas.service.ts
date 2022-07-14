@@ -8,9 +8,11 @@ import { Comida } from '../interfaces/comida';
 export class ComidasService {
 
   private arrComidas: Comida[];
+  private arrSecction: any[];
 
   constructor() {
-    this.arrComidas = COMIDAS
+    this.arrComidas = COMIDAS;
+    this.arrSecction = [];
    }
 
   getAll(pComida: string = ""): Comida[]{
@@ -23,6 +25,7 @@ export class ComidasService {
       (section) => section.seccion.includes(pComida)
     ));
   }
+
   }
 
 

@@ -1,7 +1,7 @@
 div{
     border-radius: 20px;
-    padding: 5px;
-    margin-bottom: 7px;
+    padding: 2px;
+    margin-bottom: 6px;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -45,4 +45,7 @@ div{
 .centrarBoton{
     display: flex;
     justify-content: center;
+}
+.harsRight{
+    margin-right: 0px;
 }
