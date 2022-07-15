@@ -1,18 +1,20 @@
 <div class="row mt-1">
       <div class="col d-flex flex-row flex-wrap justify-content-center ">
-            <button *ngFor="let vinos of arrSecciones"  class="btn btn-warning m-1 mayuscula margin" (click)="getAll(vinos)">{{ vinos }}</button>
-      </div>    
+            <button *ngFor="let vinos of arrSecciones" class="btn btn-warning m-1 mayuscula margin"
+                  (click)="getAll(vinos)">{{ vinos }}</button>
+      </div>
 </div>
 
 <div class="row mt-1 mb-1">
       <div class="col d-flex flex-row flex-wrap justify-content-center">
-            <button *ngFor="let uva of arrUvas | slice:0:50 " class="btn btn-success m-1 mayuscula margin" (click)="getByFilter(uva)">
+            <button *ngFor="let uva of arrUvas | slice:0:50 " class="btn btn-success m-1 mayuscula margin"
+                  (click)="getByFilter(uva)">
                   {{ uva }}
             </button>
       </div>
 </div>
 
-<div class="row">
+<div class="row mb-5">
       <div class="col">
             <h2 class="text-center subrayadoMagico">{{ seccionActual }}</h2>
             <app-vino-card [arrVinos]="arrVinos"></app-vino-card>
