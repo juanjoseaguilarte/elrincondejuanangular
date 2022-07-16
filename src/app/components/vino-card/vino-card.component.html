@@ -1,6 +1,6 @@
       <div class="d-flex no-wrap tab" *ngFor="let vino of arrVinos">
         <div class="col-8 pad">
-              <p class="mayusculas animate__bounceIn margin">{{ vino.vino }} -  {{ vino.envejecimiento }} - {{ vino.anada }}</p>
+              <p class="mayusculas">{{ vino.vino }} -  {{ vino.envejecimiento }} - {{ vino.anada }}</p>
               <p>{{ vino.uvas.join(" - ") }}</p>
               <span *ngIf="vino.new" [ngClass]="{'new': vino.new === true }"></span>
         </div>

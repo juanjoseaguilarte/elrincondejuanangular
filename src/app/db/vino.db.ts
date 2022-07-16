@@ -31,7 +31,7 @@ export const VINOS: Vino[] = [
   },
   {
     id: 3,
-    seccion: ['Vino Por Copas', 'Ribera Del Duero'],
+    seccion: ['Ribera Del Duero'],
     vino: 'Balbás 18 Meses',
     envejecimiento: 'Crianza',
     anada: 2016,
@@ -45,7 +45,7 @@ export const VINOS: Vino[] = [
   },
   {
     id: 4,
-    seccion: ['Vino Por Copas', 'Ribera Del Duero'],
+    seccion: ['Ribera Del Duero'],
     vino: 'Carramimbre',
     envejecimiento: 'Crianza',
     anada: 2018,
@@ -59,7 +59,7 @@ export const VINOS: Vino[] = [
   },
   {
     id: 5,
-    seccion: ['Vino Por Copas', 'Ribera Del Duero'],
+    seccion: ['Ribera Del Duero'],
     vino: 'Altamimbre',
     envejecimiento: 'Cosecha',
     anada: 2017,
@@ -115,7 +115,7 @@ export const VINOS: Vino[] = [
   },
   {
     id: 7,
-    seccion: ['Vino Por Copas', 'Blancos Y Rosados'],
+    seccion: ['Blancos Y Rosados'],
     vino: 'Verdejo',
     envejecimiento: 'Del Año',
     anada: 2022,
@@ -129,7 +129,7 @@ export const VINOS: Vino[] = [
   },
   {
     id: 7,
-    seccion: ['Vino Por Copas', 'Blancos Y Rosados'],
+    seccion: ['Blancos Y Rosados'],
     vino: 'Semidulce',
     envejecimiento: 'Del Año',
     anada: 2022,
@@ -143,7 +143,7 @@ export const VINOS: Vino[] = [
   },
   {
     id: 7,
-    seccion: ['Vino Por Copas', 'Blancos Y Rosados'],
+    seccion: ['Blancos Y Rosados'],
     vino: 'Yllera 5.5',
     envejecimiento: 'Del Año',
     anada: 2022,
@@ -690,7 +690,7 @@ export const VINOS: Vino[] = [
   },
   {
     id: 56,
-    seccion: ['Vino Por Copas', 'Blancos Y Rosados'],
+    seccion: ['Blancos Y Rosados'],
     vino: '828 - Rosado',
     envejecimiento: 'Cosecha',
     anada: 2021,
@@ -705,7 +705,7 @@ export const VINOS: Vino[] = [
 
   {
     id: 57,
-    seccion: ['Vino Por Copas', 'Rioja'],
+    seccion: ['Rioja'],
     vino: 'Amador Medrano',
     envejecimiento: 'Crianza',
     anada: 2019,
