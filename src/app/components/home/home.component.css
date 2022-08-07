@@ -17,6 +17,10 @@ img {
 }
 .bg-uno{
     background-color: grey;
+    
+}
+.bg-uno-uno{
+    margin-right: 12px;
 }
 .bg-dos{
     background-color: rgb(34, 33, 33);
