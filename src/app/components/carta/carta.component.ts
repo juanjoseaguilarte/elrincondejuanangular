@@ -10,18 +10,23 @@ import { ComidasService } from 'src/app/services/comidas.service';
 export class CartaComponent implements OnInit {
   arrComidas: Comida[] = [];
   arrSecciones: any[] = [];
-  seccionActual: string = 'Top 5';
+  seccionActual: string = 'Jamón Ibérico De Bellota Y Corte';
   top: any = '';
+  visionHi = false;
 
   constructor(private comidasServices: ComidasService) {}
 
   ngOnInit(): void {
-    this.arrComidas = this.comidasServices.getAll('Top 5');
+    this.arrComidas = this.comidasServices.getAll(
+      'Jamón Ibérico De Bellota Y Corte'
+    );
+    console.log(this.arrComidas);
     this.arrSecciones = this.comidasServices.getAll();
     this.arrSecciones = this.arrSecciones.reduce((acc, item) => {
       if (!acc.includes(item)) {
         acc.push(item.seccion);
       }
+      ('Jamón Ibérico De Bellota Y Corte');
       return acc;
     }, []);
     this.arrSecciones = [].concat.apply([], this.arrSecciones);
@@ -31,7 +36,6 @@ export class CartaComponent implements OnInit {
       }
       return acc;
     }, []);
-    console.log(this.arrSecciones);
   }
   open(event: any): void {
     console.log(event.target.innerHTML);
@@ -40,9 +44,33 @@ export class CartaComponent implements OnInit {
     this.arrComidas = this.comidasServices.getAll(pPlato);
     this.seccionActual = pPlato;
     if (pPlato == 'Top 5') {
-      console.log(this.arrComidas.length);
       this.top = this.arrComidas.length;
     }
   }
   getSection() {}
+
+  posicion() {
+    navigator.geolocation.watchPosition(
+      (pos) => {
+        let { coords: { latitude, longitude } = {} } = pos;
+
+        //if (latitude == 36.1618232 && longitude == -5.3518956) {
+        // 36.16160 36.16200 -5.35170 -5.35250
+        if (
+          latitude! > 36.1616 &&
+          latitude! < 36.162 &&
+          longitude! < -5.3517 &&
+          longitude! > -5.3525
+        ) {
+          this.visionHi = true;
+        } else {
+          this.visionHi = false;
+        }
+      },
+      (err) => {
+        console.warn('Error en el localizador', err);
+      },
+      { timeout: 30, maximumAge: 60 }
+    );
+  }
 }
