@@ -15,17 +15,20 @@ export class CardComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+   
+   }
   
   open(event: any): void {
     console.log(event.target.innerHTML);
   }
+  
   idioma() {
     this.english = !this.english;
-    console.log(this.english);
   }
+
   alergeno() {
     this.alergic = !this.alergic;
-  
+
   }
 }
