@@ -1,35 +1,30 @@
-      <div class="d-flex no-wrap tab" *ngFor="let plato of arrComidas">
-        <div class="col-8 pad">
-              <p class="mayusculas"  [ngClass]="{'new': plato.top === true,'top': plato.top === true }">{{ plato.plato }}</p>
-              <p *ngIf="english === true" class="rojo">{{ plato.plato_ingles }}</p>
-              <span *ngIf="alergic === true" class="rojo">{{ plato.alergenos}}</span>            
-        </div>
-        <div class="col-3">
-            <p class="d-flex flex-column ">
-                    <span class="d-block ms-auto"
-                    >{{ plato.formato_racion | number: '1.2'}} €</span>
-                    <span
-                    *ngIf="plato.formato_media !== 0"
-                    class="d-inline-block ms-auto"
-                    >1/2 - {{ plato.formato_media | number: '1.2' }} €
-                </span>
-                    <span
-                    *ngIf="plato.formato_tapa !== 0"
-                    class="d-inline-block ms-auto"
-                    >T - {{ plato.formato_tapa | number: '1.2' }} €
-                </span>
+<div class="d-flex no-wrap tab" *ngFor="let plato of arrComidas">
+    <div class="col-8 pad">
+        <p class="mayusculas" [ngClass]="{'new': plato.top === true,'top': plato.top === true }">{{
+            plato.plato }}</p>
+        <p *ngIf="english === true" class="rojo">{{ plato.plato_ingles }}</p>
+        <span *ngIf="alergic === true" class="rojo">{{ plato.alergenos}}</span>
+    </div>
+    <div class="col-3">
+        <p class="d-flex flex-column ">
+            <span class="d-block ms-auto">{{ plato.formato_racion | number: '1.2'}} €</span>
+            <span *ngIf="plato.formato_media !== 0" class="d-inline-block ms-auto">1/2 - {{ plato.formato_media |
+                number: '1.2' }} €
+            </span>
+            <span *ngIf="plato.formato_tapa !== 0" class="d-inline-block ms-auto">T - {{ plato.formato_tapa | number:
+                '1.2' }} €
+            </span>
         </p>
     </div>
 
-      </div>
+</div>
 <div class="centrarBoton">
     <div class="btn btn-warning botonIngles p-2" (click)="idioma()">
-    <span class="" *ngIf="english === true">Solo Español</span>
-    <span class="" *ngIf="english === false">Inglés</span>
+        <span class="" *ngIf="english === true">Solo Español</span>
+        <span class="" *ngIf="english === false">Inglés</span>
+    </div>
+    <div class="btn btn-warning botonIngles p-2" (click)="alergeno()">
+        <span class="" *ngIf="alergic === false">Alérgenos</span>
+        <span class="" *ngIf="alergic === true">Ocultar Alérgenos</span>
+    </div>
 </div>
-<div class="btn btn-warning botonIngles p-2" (click)="alergeno()">
-    <span class="" *ngIf="alergic === false">Alérgenos</span>
-    <span class="" *ngIf="alergic === true">Ocultar Alérgenos</span>
-</div>
-</div>
-

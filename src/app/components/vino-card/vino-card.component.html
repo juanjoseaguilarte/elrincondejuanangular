@@ -1,22 +1,14 @@
-      <div class="d-flex no-wrap tab" *ngFor="let vino of arrVinos">
-        <div class="col-8 pad">
-              <p class="mayusculas">{{ vino.vino }} -  {{ vino.envejecimiento }} - {{ vino.anada }}</p>
-              <p>{{ vino.uvas.join(" - ") }}</p>
-              <span *ngIf="vino.new" [ngClass]="{'new': vino.new === true }"></span>
-        </div>
-        <div class="col-3">
-            <p class="d-flex flex-column ">
-                    <span class="d-block ms-auto"
-                    >{{ vino.precio_botella | number: '2.2'}} €</span>
-                    <span
-                    *ngIf="vino.precio_copa !== 0"
-                    class="d-inline-block ms-auto"
-                    >Copa - {{ vino.precio_copa | number: '1.2'}} €
-                </span>
-        </p>
-    </div>
-
-      </div>
-     
-
-
+<div class="d-flex no-wrap tab" *ngFor="let vino of arrVinos">
+  <div class="col-8 pad">
+    <p class="mayusculas margin">{{ vino.vino }} - {{ vino.envejecimiento }} - {{ vino.anada }}</p>
+    <p>{{ vino.uvas.join(" - ") }}</p>
+    <span *ngIf="vino.new" [ngClass]="{'new': vino.new === true }"></span>
+  </div>
+  <div class="col-3">
+    <p class="d-flex flex-column ">
+      <span class="d-block ms-auto">{{ vino.precio_botella | number: '2.2'}} €</span>
+      <span *ngIf="vino.precio_copa !== 0" class="d-inline-block ms-auto">Copa - {{ vino.precio_copa | number: '1.2'}} €
+      </span>
+    </p>
+  </div>
+</div>

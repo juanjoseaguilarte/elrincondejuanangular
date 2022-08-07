@@ -10,8 +10,6 @@ const routes: Routes = [
   { path: 'menu/carta', component: CartaComponent },
   { path: 'menu/bodega', component: BodegaComponent },
 
-
-
   { path: '**', redirectTo: '/inicio' },
 ];
 
