@@ -10,18 +10,22 @@ import { ComidasService } from 'src/app/services/comidas.service';
 export class CartaComponent implements OnInit {
   arrComidas: Comida[] = [];
   arrSecciones: any[] = [];
-  seccionActual: string = 'Top 5';
+  seccionActual: string = 'Jamón Ibérico De Bellota Y Corte';
   top: any = '';
 
   constructor(private comidasServices: ComidasService) {}
 
   ngOnInit(): void {
-    this.arrComidas = this.comidasServices.getAll('Top 5');
+    this.arrComidas = this.comidasServices.getAll(
+      'Jamón Ibérico De Bellota Y Corte'
+    );
+    console.log(this.arrComidas)
     this.arrSecciones = this.comidasServices.getAll();
     this.arrSecciones = this.arrSecciones.reduce((acc, item) => {
       if (!acc.includes(item)) {
         acc.push(item.seccion);
       }
+      ('Jamón Ibérico De Bellota Y Corte');
       return acc;
     }, []);
     this.arrSecciones = [].concat.apply([], this.arrSecciones);

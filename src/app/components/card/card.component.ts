@@ -22,10 +22,8 @@ export class CardComponent implements OnInit {
   }
   idioma() {
     this.english = !this.english;
-    console.log(this.english);
   }
   alergeno() {
     this.alergic = !this.alergic;
-  
   }
 }
