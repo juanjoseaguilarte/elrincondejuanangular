@@ -18,7 +18,7 @@
     </div>
 
 </div>
-<div class="centrarBoton">
+<div class="centrarBoton" *ngIf="arrComidas.length > 0">
     <div class="btn btn-warning botonIngles p-2" (click)="idioma()">
         <span class="" *ngIf="english === true">Solo Español</span>
         <span class="" *ngIf="english === false">Inglés</span>
