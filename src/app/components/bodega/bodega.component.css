@@ -15,9 +15,11 @@
 .subrayadoMagico:focus {
     background-size: 100% 2px;
 }
+
 .margin {
     margin: 1px !important;
 }
+
 .btn {
     padding: 0.3px 5px;
 }

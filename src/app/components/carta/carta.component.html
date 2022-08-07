@@ -1,17 +1,18 @@
-
 <div class="row mt-3 mb-1">
       <div class="col d-flex flex-row flex-wrap justify-content-center">
-            <button *ngFor="let seccion of arrSecciones" class="btn btn-sm btn-warning mayuscula margin" (click)="getAll(seccion)">{{ seccion }}</button>
+            <button *ngFor="let seccion of arrSecciones" class="btn btn-sm btn-warning mayuscula margin"
+                  (click)="getAll(seccion)">{{ seccion }}</button>
       </div>
 </div>
 
-<div class="row">
+<div class="row mb-5">
       <div class="col">
             <h2 class="text-center subrayadoMagico">{{ seccionActual }}</h2>
             <div class="text-center">
-                  <span class="mayuscula" *ngIf="seccionActual.toLocaleLowerCase() === 'nigiris - maki rolls'">Mínimo 3 Unidades Mezcladas Entre Si</span>
+                  <span class="mayuscula" *ngIf="seccionActual.toLocaleLowerCase() === 'nigiris - maki rolls'">Mínimo 3
+                        Unidades Mezcladas Entre Si</span>
             </div>
 
-            <app-card class="m-1 " [arrComidas]="arrComidas"></app-card>
+            <app-card class="m-1" [arrComidas]="arrComidas"></app-card>
       </div>
 </div>

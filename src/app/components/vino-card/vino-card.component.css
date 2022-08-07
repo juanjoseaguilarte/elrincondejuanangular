@@ -35,6 +35,7 @@ div {
     animation: prueba 2s alternate infinite;
     top: -10px;
 }
+
 .margin {
     margin: 1px !important;
 }
@@ -51,6 +52,7 @@ div {
     }
 
 }
+
 .centrarBoton {
     display: flex;
     justify-content: center;

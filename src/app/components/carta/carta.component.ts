@@ -35,13 +35,18 @@ export class CartaComponent implements OnInit {
       }
       return acc;
     }, []);
+    
   }
-
+  open(event: any): void {
+    console.log(event.target.innerHTML);
+  }
   getAll(pPlato: string) {
     this.arrComidas = this.comidasServices.getAll(pPlato);
     this.seccionActual = pPlato;
     if (pPlato == 'Top 5') {
+      
       this.top = this.arrComidas.length;
     }
   }
+  getSection() {}
 }
