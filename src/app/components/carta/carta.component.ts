@@ -12,8 +12,10 @@ export class CartaComponent implements OnInit {
   arrSecciones: any[] = [];
   seccionActual: string = 'Jamón Ibérico De Bellota Y Corte';
   top: any = '';
-  visionHi = false;
+  mostrarImagen = false;
   primeraVez = false;
+  latidudActual: number | any = 0;
+  longitudActual: number | any = 0;
 
   constructor(private comidasServices: ComidasService) {}
 
@@ -36,6 +38,31 @@ export class CartaComponent implements OnInit {
       }
       return acc;
     }, []);
+
+   
+      navigator.geolocation.watchPosition(
+        async (pos) => {
+          let { coords: { latitude, longitude } = {} } = await pos;
+          this.latidudActual = latitude;
+          this.longitudActual = longitude;
+          console.log(this.latidudActual)
+          console.log(this.longitudActual)
+          if (
+            this.latidudActual! > 36.1609 &&
+            this.latidudActual! < 36.1627 &&
+            this.longitudActual! < -5.3507 &&
+            this.longitudActual! > -5.3530
+          ) {
+            this.mostrarImagen = true;
+          }
+        },
+        (err) => {
+          console.warn('Error en el localizador', err);
+        }
+      );
+
+  
+    
   }
   open(event: any): void {
     console.log(event.target.innerHTML);
@@ -47,37 +74,22 @@ export class CartaComponent implements OnInit {
       this.top = this.arrComidas.length;
     }
   }
-  getSection() {}
 
   posicion() {
-    if (this.primeraVez === false) {
-      navigator.geolocation.watchPosition(
-        (pos) => {
-          let { coords: { latitude, longitude } = {} } = pos;
-
-          //if (latitude == 36.1618232 && longitude == -5.3518956) {
-          // 36.16160 36.16200 -5.35170 -5.35250
           if (
-            latitude! > 36.1616 &&
-            latitude! < 36.162 &&
-            longitude! < -5.3517 &&
-            longitude! > -5.3525
+            this.latidudActual! > 36.1609 &&
+            this.latidudActual! < 36.1627 &&
+            this.longitudActual! < -5.3507 &&
+            this.longitudActual! > -5.3530
           ) {
-            this.visionHi = true;
+            this.mostrarImagen = true;
             this.arrComidas = [];
-            this.seccionActual = "Sugerencias Del Día Fuera De Carta";
+            this.seccionActual = 'Sugerencias Del Día Fuera De Carta';
             this.primeraVez = true;
           } else {
-            this.visionHi = false;
+            this.mostrarImagen = false;
+            this.seccionActual = 'Sugerencias Del Día Fuera De Carta';
           }
-        },
-        (err) => {
-          console.warn('Error en el localizador', err);
-        }
-      );
-    } else {
-      this.arrComidas = [];
-      this.seccionActual = 'Sugerencias Del Día Fuera De Carta';
-    }
   }
+
 }
