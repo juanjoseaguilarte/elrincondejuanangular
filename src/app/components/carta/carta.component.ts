@@ -39,30 +39,26 @@ export class CartaComponent implements OnInit {
       return acc;
     }, []);
 
-   
-      navigator.geolocation.watchPosition(
-        async (pos) => {
-          let { coords: { latitude, longitude } = {} } = await pos;
-          this.latidudActual = latitude;
-          this.longitudActual = longitude;
-          console.log(this.latidudActual)
-          console.log(this.longitudActual)
-          if (
-            this.latidudActual! > 36.1609 &&
-            this.latidudActual! < 36.1627 &&
-            this.longitudActual! < -5.3507 &&
-            this.longitudActual! > -5.3530
-          ) {
-            this.mostrarImagen = true;
-          }
-        },
-        (err) => {
-          console.warn('Error en el localizador', err);
+    navigator.geolocation.watchPosition(
+      async (pos) => {
+        let { coords: { latitude, longitude } = {} } = await pos;
+        this.latidudActual = latitude;
+        this.longitudActual = longitude;
+        console.log(this.latidudActual);
+        console.log(this.longitudActual);
+        if (
+          this.latidudActual! > 36.1609 &&
+          this.latidudActual! < 36.1627 &&
+          this.longitudActual! < -5.3507 &&
+          this.longitudActual! > -5.353
+        ) {
+          this.mostrarImagen = true;
         }
-      );
-
-  
-    
+      },
+      (err) => {
+        console.warn('Error en el localizador', err);
+      }
+    );
   }
   open(event: any): void {
     console.log(event.target.innerHTML);
@@ -74,22 +70,21 @@ export class CartaComponent implements OnInit {
       this.top = this.arrComidas.length;
     }
   }
-
+  //36.1618291 -5.3518783
   posicion() {
-          if (
-            this.latidudActual! > 36.1609 &&
-            this.latidudActual! < 36.1627 &&
-            this.longitudActual! < -5.3507 &&
-            this.longitudActual! > -5.3530
-          ) {
-            this.mostrarImagen = true;
-            this.arrComidas = [];
-            this.seccionActual = 'Sugerencias Del Día Fuera De Carta';
-            this.primeraVez = true;
-          } else {
-            this.mostrarImagen = false;
-            this.seccionActual = 'Sugerencias Del Día Fuera De Carta';
-          }
+    if (
+      this.latidudActual! > 36.1609 &&
+      this.latidudActual! < 36.1627 &&
+      this.longitudActual! < -5.3507 &&
+      this.longitudActual! > -5.353
+    ) {
+      this.mostrarImagen = true;
+      this.arrComidas = [];
+      this.seccionActual = 'Sugerencias Del Día Fuera De Carta';
+      this.primeraVez = true;
+    } else {
+      this.mostrarImagen = false;
+      this.seccionActual = 'Sugerencias Del Día Fuera De Carta';
+    }
   }
-
 }
