@@ -1,6 +1,6 @@
 <div class="row mt-3 mb-1">
       <div class="col d-flex flex-row flex-wrap justify-content-center">
-            <button *ngIf="mostrarImagen == true" class="btn btn-sm mayuscula margin btn-warning sugerencia" (click)="posicion()">Fuera De Carta</button>
+            <button *ngIf="mostrarImagen == true" class="btn btn-sm mayuscula margin btn-warning sugerencia subrayadoMagico" (click)="posicion()">Fuera De Carta</button>
             <button *ngFor="let seccion of arrSecciones" class="btn btn-sm btn-warning mayuscula margin"
                   (click)="getAll(seccion)">{{ seccion }}</button>
       </div>
@@ -21,4 +21,5 @@
 <div class="row mb-5" *ngIf="mostrarImagen == true && seccionActual == 'Sugerencias Del Día Fuera De Carta'  ">
       <img src="../../../assets/images/unafoto.jpg" alt="">
 </div>
+
 

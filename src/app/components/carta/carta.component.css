@@ -18,7 +18,7 @@
 }
 
 .margin {
-    margin: 1px;
+    margin: 2px;
 }
 
 .isActive {
@@ -29,17 +29,24 @@
     padding: 0.3px 5px;
 }
 .sugerencia {
+
     animation-name: fueraDeCarta;
         animation-duration: 2s;
         animation-iteration-count: infinite;
 }
 
 @keyframes fueraDeCarta {
-    from {
-        background-color: white;
+    from 
+    {
+        background-color: rgb(21, 4, 4);
+        color: white;
+        border: 1px solid yellow;
+
     }
 
-    to {
-        background-color: #ffc107;
+    to 
+    {
+        background-color: #f7c01b;
+
     }
 }
