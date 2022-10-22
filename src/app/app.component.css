@@ -10,8 +10,11 @@
 footer {
     background-color: rgb(34, 33, 33);
     color: white;
-    width: 99.1%;
+    width: 100%;
     position: fixed;
     bottom: 0px;
    
+}
+::ng-deep .row{
+  --bs-gutter-x: 0rem !important;
 }
