@@ -1049,11 +1049,11 @@ export const COMIDAS: Comida[] = [
   {
     id: 94,
     seccion: ['Jamón Ibérico De Bellota Y Corte'],
-    plato: 'Servicio Comensal 0,75 € Por Persona',
+    plato: 'Servicio Comensal 0,95 € Por Persona',
     plato_ingles: '',
     formato_tapa: 0,
     formato_media: 0,
-    formato_racion: 0.75,
+    formato_racion: 0.95,
     alergenos: '',
     top: false,
     new: false,

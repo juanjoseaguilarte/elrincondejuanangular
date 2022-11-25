@@ -9,6 +9,8 @@ import { CartaComponent } from './components/carta/carta.component';
 import { BodegaComponent } from './components/bodega/bodega.component';
 import { CardComponent } from './components/card/card.component';
 import { VinoCardComponent } from './components/vino-card/vino-card.component';
+import { NavidadComponent } from './components/navidad/navidad.component';
+import { ReservaComponent } from './components/reserva/reserva.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,10 @@ import { VinoCardComponent } from './components/vino-card/vino-card.component';
     CartaComponent,
     BodegaComponent,
     CardComponent,
-    VinoCardComponent
+    VinoCardComponent,
+    NavidadComponent,
+    ReservaComponent,
+
   ],
   imports: [
     BrowserModule,

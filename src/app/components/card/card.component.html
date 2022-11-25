@@ -1,5 +1,5 @@
 <div class="d-flex no-wrap tab" *ngFor="let plato of arrComidas">
-    <div class="col-10">
+    <div class="col-md-10">
         <p class="mayusculas" [ngClass]="{'new': plato.top === true,'top': plato.top === true }">{{
             plato.plato }}</p>
         <p *ngIf="english === true" class="rojo">{{ plato.plato_ingles }}</p>

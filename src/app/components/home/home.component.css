@@ -69,3 +69,22 @@ footer{
     margin-left: -5px;
    padding: 5px;;
 }
+.boton-flotante{
+    z-index: 10;
+    background-color: rgb(255, 255, 255, 0.6);
+    color: black;
+    font-size: 50px;
+    position: absolute;
+    text-decoration: none;
+    margin: auto;
+    top: 200px;
+    padding: 20px 80px;
+    border-radius: 30px;
+    font-weight: 500;
+}
+.contenedor-menu-navidad {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+
+}
