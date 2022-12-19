@@ -16,11 +16,12 @@ export const COMIDAS: Comida[] = [
   {
     id: 2,
     seccion: ['Jamón Ibérico De Bellota Y Corte'],
-    plato: 'Jamón Ibérico De Bellota',
+    plato:
+      'Jamón Ibérico De Bellota - Vendemos Nuestros Jamones Enteros, Pregunta A Nuestras Camareras',
     plato_ingles: 'Iberian Ham',
     formato_tapa: 0,
-    formato_media: 10.95,
-    formato_racion: 21.95,
+    formato_media: 11.95,
+    formato_racion: 23.95,
     alergenos: '',
     top: true,
     new: false,
@@ -320,7 +321,7 @@ export const COMIDAS: Comida[] = [
     plato_ingles: '',
     formato_tapa: 0,
     formato_media: 0,
-    formato_racion: 9.95,
+    formato_racion: 12.45,
     alergenos: 'GLUTEN - HUEVO - LACTEO',
     top: false,
     new: false,
@@ -417,7 +418,7 @@ export const COMIDAS: Comida[] = [
   {
     id: 46,
     seccion: ['Baos - Quesadillas - Poke - Gyozas'],
-    plato: 'Gyozas De Pato - 4 Unidades',
+    plato: 'Gyozas - Empanadillas Japonesas De Pato - 4 Unidades',
     plato_ingles: '',
     formato_tapa: 0,
     formato_media: 0,
@@ -429,7 +430,7 @@ export const COMIDAS: Comida[] = [
   {
     id: 46,
     seccion: ['Baos - Quesadillas - Poke - Gyozas'],
-    plato: 'Gyozas De Pollo - 4 Unidades',
+    plato: 'Gyozas - Empanadillas Japonesas De Pollo - 4 Unidades',
     plato_ingles: '',
     formato_tapa: 0,
     formato_media: 0,
@@ -441,7 +442,7 @@ export const COMIDAS: Comida[] = [
   {
     id: 46,
     seccion: ['Baos - Quesadillas - Poke - Gyozas'],
-    plato: 'Gyozas De Gambas - 4 Unidades',
+    plato: 'Gyozas - Empanadillas Japonesas De Gambas - 4 Unidades',
     plato_ingles: '',
     formato_tapa: 0,
     formato_media: 0,
@@ -828,6 +829,18 @@ export const COMIDAS: Comida[] = [
     new: false,
   },
   {
+    id: 77,
+    seccion: ['Carnes - Salsas'],
+    plato: 'KOBE Certificado Japones - Al Peso - Precio Por 100 gramos',
+    plato_ingles: '',
+    formato_tapa: 0,
+    formato_media: 0,
+    formato_racion: 45,
+    alergenos: '',
+    top: false,
+    new: false,
+  },
+  {
     id: 78,
     seccion: ['Carnes - Salsas'],
     plato: 'Solomillo De Cerdo Ibérico A La Pimienta Verde',
@@ -846,7 +859,7 @@ export const COMIDAS: Comida[] = [
     plato_ingles: 'Grilled Lean Iberian Pork Fillet',
     formato_tapa: 0,
     formato_media: 0,
-    formato_racion: 14.95,
+    formato_racion: 16.95,
     alergenos: '',
     top: false,
     new: false,
@@ -871,7 +884,7 @@ export const COMIDAS: Comida[] = [
     plato_ingles: 'Sirloin Beef, Cheddar, Rocket And Mayonnaise',
     formato_tapa: 0,
     formato_media: 0,
-    formato_racion: 2.95,
+    formato_racion: 3.45,
     alergenos: 'GLUTEN - HUEVO - LACTEO - SESAMO',
     top: true,
     new: false,
@@ -884,7 +897,7 @@ export const COMIDAS: Comida[] = [
     plato_ingles: 'Sirloin Beef, Mustar Sauce And Caramelized Onion',
     formato_tapa: 0,
     formato_media: 0,
-    formato_racion: 2.95,
+    formato_racion: 3.45,
     alergenos: 'GLUTEN - HUEVO - LACTEO - SESAMO - MOSTAZA',
     top: false,
     new: false,
@@ -897,7 +910,7 @@ export const COMIDAS: Comida[] = [
     plato_ingles: 'Sirloin Beef, Species Sauce And Fried Onion',
     formato_tapa: 0,
     formato_media: 0,
-    formato_racion: 2.95,
+    formato_racion: 3.45,
     alergenos: 'GLUTEN - HUEVO - LACTEO - SESAMO',
     top: false,
     new: false,
@@ -1061,20 +1074,6 @@ export const COMIDAS: Comida[] = [
   {
     id: 12,
     seccion: ['Carnes - Salsas'],
-    plato:
-      'Chuleton Premium De Irlanda 45 Días De Maduración - Precio Por Kilo',
-    plato_ingles: '',
-    formato_tapa: 0,
-    formato_media: 0,
-    formato_racion: 65.0,
-    alergenos: '',
-    top: false,
-    new: false,
-  },
-
-  {
-    id: 12,
-    seccion: ['Carnes - Salsas'],
     plato: 'Entrecot Madurado 45 Días',
     plato_ingles: 'Entrecot',
     formato_tapa: 0,
@@ -1086,56 +1085,6 @@ export const COMIDAS: Comida[] = [
   },
 
   {
-    id: 12,
-    seccion: ['Carnes - Salsas'],
-    plato: 'Entrecot Madurado 100 Días',
-    plato_ingles: 'Entrecot',
-    formato_tapa: 0,
-    formato_media: 0,
-    formato_racion: 33.0,
-    alergenos: '',
-    top: false,
-    new: false,
-  },
-
-  {
-    id: 12,
-    seccion: ['Carnes - Salsas'],
-    plato: 'Cuarto De Cochinillo Lechal A Baja Temperatura - 24 Horas',
-    plato_ingles: 'Grilled Iberian Pork Tenderloin',
-    formato_tapa: 0,
-    formato_media: 0,
-    formato_racion: 33.5,
-    alergenos: '',
-    top: true,
-    new: false,
-  },
-  {
-    id: 12,
-    seccion: ['Carnes - Salsas'],
-    plato: 'Paletilla De Cordero Lechal A Baja Temperatura - 24 Horas',
-    plato_ingles: '',
-    formato_tapa: 0,
-    formato_media: 0,
-    formato_racion: 26.0,
-    alergenos: '',
-    top: true,
-    new: false,
-  },
-  {
-    id: 12,
-    seccion: ['Carnes - Salsas'],
-    plato: 'Costilla De Black Angus A Baja Temperatura - 24 Horas',
-    plato_ingles: '',
-    formato_tapa: 0,
-    formato_media: 0,
-    formato_racion: 26.0,
-    alergenos: '',
-    top: true,
-    new: false,
-  },
-
-  {
     id: 78,
     seccion: ['Carnes - Salsas'],
     plato:
@@ -1143,7 +1092,7 @@ export const COMIDAS: Comida[] = [
     plato_ingles: 'To Make At The Table To Suit The Client',
     formato_tapa: 0,
     formato_media: 0,
-    formato_racion: 39.95,
+    formato_racion: 44.95,
     alergenos: '',
     top: false,
     new: false,
@@ -1174,125 +1123,5 @@ export const COMIDAS: Comida[] = [
     top: false,
     new: false,
   },
-
-  // {
-  //   id: 81,
-  //   seccion: ['Mini Hamburguesas'],
-  //   plato:
-  //     'Mini Hamburguesa De Solomillo De Vaca, Foie, Mermelada Y Queso Viejo',
-  //   plato_ingles: 'Mini Beef Tenderloin Burger, Foie, Jam and Old Cheese',
-  //   formato_tapa: 0,
-  //   formato_media: 0,
-  //   formato_racion: 4.9,
-  //   alergenos: 'GLUTEN - HUEVO - LACTEO - SESAMO',
-  //   top: true,
-  //   new: false,
-  // },
-  // {
-  //   id: 94,
-  //   seccion: ['Top 5'],
-  //   plato: 'Churrasco De Pollo',
-  //   plato_ingles: '',
-  //   formato_tapa: 0,
-  //   formato_media: 0,
-  //   formato_racion: 10.9,
-  //   alergenos: '',
-  //   top: true,
-  //   new: true,
-  // },
-  // {
-  //   id: 94,
-  //   seccion: ['Top 5'],
-  //   plato: 'Mini Rollito De Verduras',
-  //   plato_ingles: '',
-  //   formato_tapa: 0,
-  //   formato_media: 0,
-  //   formato_racion: 2.75,
-  //   alergenos: 'GLUTEN - SOJA',
-  //   top: true,
-  //   new: true,
-  // },
-  // {
-  //   id: 94,
-  //   seccion: ['Top 5'],
-  //   plato: 'Sashimi De Atún Rojo JC Mackintosh',
-  //   plato_ingles: '',
-  //   formato_tapa: 0,
-  //   formato_media: 0,
-  //   formato_racion: 16.50,
-  //   alergenos: '',
-  //   top: true,
-  //   new: true,
-  // },
-  // {
-  //   id: 95,
-  //   seccion: ['Jamón Ibérico De Bellota Y Corte'],
-  //   plato: 'Caña De Lomo Ibérica',
-  //   plato_ingles: '',
-  //   formato_tapa: 2.95,
-  //   formato_media: 6.9,
-  //   formato_racion: 11.9,
-  //   alergenos: '',
-  //   top: true,
-  //   new: true,
-  // },
-  // {
-  //   id: 96,
-  //   seccion: ['Jamón Ibérico De Bellota Y Corte'],
-  //   plato: 'Salchichón Ibérico',
-  //   plato_ingles: '',
-  //   formato_tapa: 2.25,
-  //   formato_media: 5.9,
-  //   formato_racion: 8.9,
-  //   alergenos: '',
-  //   top: true,
-  //   new: true,
-  // },
-  // {
-  //   id: 97,
-  //   seccion: ['Jamón Ibérico De Bellota Y Corte'],
-  //   plato: 'Chorizo Ibérico',
-  //   plato_ingles: '',
-  //   formato_tapa: 2.25,
-  //   formato_media: 5.9,
-  //   formato_racion: 8.9,
-  //   alergenos: '',
-  //   top: true,
-  //   new: true,
-  // },
 ];
 
-// GLUTEN 1 / CRUSTÁCEOS 2 / HUEVOS 3 / PESCADO 4 /CACAHUETES 5 /
-// SOJA 6 / LÁCTEOS 7 / FRUTOS DE CÁSCARA 8 / APIO 9 / MOSTAZA 10 / GRANOS DE
-// SÉSAMO 11 / DIÓXIDO DE AZUFRE Y SULFITOS 12 / ALTRAMUCES 13 / MOLUSCOS 14 /
-
-/**
-
-// GLUTEN 1 / CRUSTÁCEOS 2 / HUEVOS 3 / PESCADO 4 /CACAHUETES 5 /
-// SOJA 6 / LÁCTEOS 7 / FRUTOS DE CÁSCARA 8 / APIO 9 / MOSTAZA 10 / GRANOS DE
-// SÉSAMO 11 / DIÓXIDO DE AZUFRE Y SULFITOS 12 / ALTRAMUCES 13 / MOLUSCOS 14 /
-
-'Hamburguesas Gourmet' => array (
-            array ( 120, 'BURGUER GOURMET 1', '150 gramos de jugosa hamburguesa de solomillo de vaca, mayonesa, mostaza, lechuga, cebolla, tomate y cheddar, con patatas ' ,   '' ,   '10.50', '[1] - [3] - [7] - [11]'),
-            array ( 121, 'BURGUER GOURMET 2', '150 gramos de jugosa hamburguesa de solomillo de vaca, huevo frito, cebolla frita, mayonesa y rodaja de tomate, con patatas ' ,   '' ,   '11.50', '[1] - [3] - [7] - [11]'),
-            array ( 122, 'BURGUER GOURMET 3', 'Doble de 150 gramos de jugosa hamburguesa de solomillo de vaca, con cheddar, ketchup, pepinillo, mostaza y cebolla cruda, con patatas ' ,   '' ,   '16.45', '[1] - [3] - [7] - [11]'),
-            array ( 123, 'BURGUER GOURMET 4', '150 gramos de jugosa hamburguesa de solomillo de vaca, lechuga, cebolla cruda, cheddar, pepinillo y gaucha, con patatas ' ,  '' ,   '10.50', '[1] - [3] - [7] - - [10] - [11]'),
-            array ( 124, 'BURGUER GOURMET 5', '150 gramos de jugosa hamburguesa de solomillo de vaca. Con cheddar, rúcula y  mayonesa, con patatas ',   '' ,   '10.50', '[1] - [3] - [7] - [11]'),
-            array ( 125, 'BURGUER GOURMET 6', '150 gramos de jugosa hamburguesa de solomillo de vaca. Con queso curado, foie y  mermelada, con patatas ',   '' ,   '15.50', '[1] - [3] - [7] - [11]'),
-            array ( 126, 'BURGUER DONNA - DE CARNE MADURADA' , 'Con una maduración de 45 días, hemos elaborado ésta delicia. 150 gramos de carne madurada con un sabor intenso. Con Cheddar, Mostaza, Tomate, Mayonesa Y Cebolla Crujiente, con patatas ',   '' ,   '14.50', '[1] - [3] - [7] - [11]'),
-            array ( 127, 'BURGUER LITTLE-JOHN - DE CARNE MADURADA' , 'Con una maduración de 45 días, hemos elaborado ésta delicia. 150 gramos de carne madurada con un sabor intenso. 3 Quesos "Rallado, Cheddar Y Roquefort" , con patatas ',   '' ,   '14.50', '[1] - [3] - [7] - [11]'),
-            array ( 128, 'BURGUER DE WAGYU' , '150 gramos de auténtica Carne De Wagyu Nacional, Con Bacon, Mayonesa, Cheddar y Lechuga, con patatas ',   '' ,   '18.90', '[1] - [3] - [7] - [11]'),
-)
-// GLUTEN 1 / CRUSTÁCEOS 2 / HUEVOS 3 / PESCADO 4 /CACAHUETES 5 /
-// SOJA 6 / LÁCTEOS 7 / FRUTOS DE CÁSCARA 8 / APIO 9 / MOSTAZA 10 / GRANOS DE
-// SÉSAMO 11 / DIÓXIDO DE AZUFRE Y SULFITOS 12 / ALTRAMUCES 13 / MOLUSCOS 14 /
-)
-?>
-<?php 
-$indice = 0; 
-?>
- * 
- * 
- * 
- * 
- */

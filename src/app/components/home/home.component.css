@@ -88,3 +88,18 @@ footer{
     justify-content: center;
 
 }
+@media only screen and (max-width: 576px) {
+    .boton-flotante {
+        padding: 10px 30px;
+        font-size: 30px;
+        animation: text-menu  3s infinite;
+        }
+}
+@keyframes text-menu {
+    from{
+        transform: scale(1.1);
+    }
+    to{
+        transform: scale(0.8);
+    }
+}
