@@ -25,20 +25,19 @@ export class CartaComponent implements OnInit {
       'Jamón Ibérico De Bellota Y Corte'
     );
     this.arrSecciones = this.comidasServices.getAll();
+
+    this.arrSecciones = this.comidasServices.getAll();
+    console.log(this.arrSecciones);
     this.arrSecciones = this.arrSecciones.reduce((acc, item) => {
-      if (!acc.includes(item)) {
-        acc.push(item.seccion);
-      }
-      ('Jamón Ibérico De Bellota Y Corte');
+      item.seccion.forEach((seccion: any) => {
+        if (!acc.includes(seccion)) {
+          acc.push(seccion);
+        }
+      });
+      console.log(acc);
       return acc;
     }, []);
-    this.arrSecciones = [].concat.apply([], this.arrSecciones);
-    this.arrSecciones = this.arrSecciones.reduce((acc, item) => {
-      if (!acc.includes(item)) {
-        acc.push(item);
-      }
-      return acc;
-    }, []);
+    this.arrSecciones = [...new Set(this.arrSecciones)];
 
     navigator.geolocation.watchPosition(
       async (pos) => {

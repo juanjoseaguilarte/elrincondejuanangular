@@ -17,7 +17,9 @@ export class ComidasService {
     //console.log(pComida)
     this.arrComidas = COMIDAS;
     if (!pComida || pComida == '') {
-      return this.arrComidas;
+      return this.arrComidas.sort(
+        (a, b) => a.formato_racion - b.formato_racion
+      );
     }
     return (this.arrComidas = this.arrComidas.filter(
       (section) => section.seccion.includes(pComida)

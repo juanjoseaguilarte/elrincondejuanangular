@@ -3,7 +3,7 @@ img {
     object-fit: cover;
     }
 .art{
-    height: 250px;
+    height: 350px;
     color: white;
 
 }
@@ -20,7 +20,7 @@ img {
     
 }
 .bg-uno-uno{
-    margin-right: 12px;
+
     margin-bottom: 50px;
 }
 .bg-dos{
@@ -46,17 +46,25 @@ footer{
     font-size: 0.9rem;
 }
 
-@media (max-width: 578px){
+@media (max-width: 74px){
     .art{
         height: 220px;
         width: 100%;
     }
-    
+    .reservas-centrado {
+        font-size: 3rem !important;
+    }
+
 }
 @media (min-width: 750px){
     img{
-        height: 90vh;
+        height: 90vh;    
     }
+
+}
+.logo-up{
+    position: relative;
+    top: -15px !important;
 }
 
 .marginizquierdo{
@@ -67,7 +75,7 @@ footer{
 .diaActivo{
     background-color: rgb(34, 33, 33);
     margin-left: -5px;
-   padding: 5px;;
+    padding: 5px;;
 }
 .boton-flotante{
     z-index: 10;
@@ -94,6 +102,7 @@ footer{
         font-size: 30px;
         animation: text-menu  3s infinite;
         }
+
 }
 @keyframes text-menu {
     from{
@@ -102,4 +111,27 @@ footer{
     to{
         transform: scale(0.8);
     }
+
+
+
+}
+
+.reservas-centrado{
+        
+            text-decoration: none;
+            font-size: 6rem;
+            position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            /* margin: auto; */
+       
+            color: white;
+            background: rgb(141, 133, 133, 0.5);
+            margin: 20px;
+            padding: 30px;
+            border-radius: 30px;
+}
+.reservas-centrado:hover{
+            background: rgb(141, 133, 133, 0.7);
 }

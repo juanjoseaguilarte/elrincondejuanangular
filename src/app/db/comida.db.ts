@@ -1090,7 +1090,7 @@ export const COMIDAS: Comida[] = [
     plato_ingles: '',
     formato_tapa: 0,
     formato_media: 0,
-    formato_racion: 0.95,
+    formato_racion: 1.45,
     alergenos: '',
     top: false,
     new: false,
