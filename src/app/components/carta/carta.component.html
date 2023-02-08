@@ -1,22 +1,21 @@
+
 <div class="row mt-3 mb-1">
       <div class="col d-flex flex-row flex-wrap justify-content-center">
-            <button *ngIf="mostrarImagen == true" class="btn btn-sm mayuscula margin btn-warning sugerencia subrayadoMagico" (click)="posicion()">Fuera De Carta</button>
+            <button 
+                  class="btn btn-sm mayuscula margin btn-warning sugerencia subrayadoMagico" (click)="posicion()">Fuera
+                  De Carta</button>
             <button *ngFor="let seccion of arrSecciones" class="btn btn-sm btn-warning mayuscula margin"
-                  (click)="getAll(seccion)">{{ seccion }}</button>
+                  (click)="getAll(seccion)">{{ seccion | uppercase }}</button>
       </div>
 </div>
 
 <div class="row mb-5">
       <div class="col">
-            <h2 *ngIf="mostrarImagen == false" class="text-center subrayadoMagico">{{ seccionActual }}</h2>
-            <h2 *ngIf="mostrarImagen == true" class="text-center subrayadoMagico">{{ seccionActual }}</h2>
+            <h2 *ngIf="mostrarImagen == false" class="text-center subrayadoMagico">{{ seccionActual | uppercase }}</h2>
+            <h2 *ngIf="mostrarImagen == true" class="text-center subrayadoMagico">{{ seccionActual | uppercase }}</h2>
             <div class="text-center">
                   <span class="mayuscula" *ngIf="seccionActual.toLocaleLowerCase() === 'nigiris - maki rolls'">Mínimo 3
                         Unidades Mezcladas Entre Si</span>
-            </div>
-            
-            <div class="text-center">
-                  <a routerLink="/menu/navidad"><span class="btn btn-sm mayuscula margin btn-warning sugerencia subrayadoMagico">Comida De Empresa / Grupos / Menu De Navidad</span></a>  
             </div>
 
             <app-card class="m-1" [arrComidas]="arrComidas"></app-card>
@@ -25,5 +24,10 @@
 <div class="row mb-5" *ngIf="mostrarImagen == true && seccionActual == 'Sugerencias Del Día Fuera De Carta'  ">
       <img src="../../../assets/images/unafoto.jpg" alt="">
 </div>
-
-
+<div class="row mb-5" *ngIf="mostrarImagen == false && seccionActual == 'Sugerencias Del Día Fuera De Carta'  ">
+      <div class="col m-3">
+            <h3 class="text-center">Ohhhh!!!</h3>
+            <h3 class="text-center">Sólo lo puedes ver si estás en El Rincón De Juan y aceptas la ubicación, sino, en
+                  los televisores puedes hacerle una foto como siempre</h3>
+      </div>
+</div>

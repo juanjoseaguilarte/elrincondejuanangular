@@ -13,13 +13,14 @@ export class HomeComponent implements OnInit {
 
   constructor() { 
 
-   this.arrNumeros = this.arrNumeros.sort(function() { return Math.random() - 0.5 });
-    console.log(this.arrNumeros)
+    this.arrNumeros = this.arrNumeros.sort(function () { return Math.random() - 0.5 });
+    
   }
 
   ngOnInit(): void {
 
     const fechaComoCadena = Date.now(); // día lunes
+    
     const dias = [
       'domingo',
       'lunes',
@@ -31,7 +32,6 @@ export class HomeComponent implements OnInit {
     ];
     const numeroDia = new Date(fechaComoCadena).getDay();
     this.dia = dias[numeroDia];
-    console.log(this.dia);
   }
 
 }

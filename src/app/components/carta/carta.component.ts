@@ -16,6 +16,7 @@ export class CartaComponent implements OnInit {
   primeraVez = false;
   latidudActual: number | any = 0;
   longitudActual: number | any = 0;
+  isFestivo: boolean = false;
 
   constructor(private comidasServices: ComidasService) {}
 
@@ -85,6 +86,7 @@ export class CartaComponent implements OnInit {
     } else {
       this.mostrarImagen = false;
       this.seccionActual = 'Sugerencias Del Día Fuera De Carta';
+      this.arrComidas = [];
     }
   }
 }
