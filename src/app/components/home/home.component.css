@@ -1,137 +1,125 @@
 img {
-    height: 450px;
-    object-fit: cover;
-    }
-.art{
-    height: 350px;
-    color: white;
-
+  height: 450px;
+  object-fit: cover;
 }
-.art2{
-    height: 250px;
-    color: white;
-
+.art {
+  height: 350px;
+  color: white;
 }
-.h2height{
-    font-weight: 700;
+.art2 {
+  height: 250px;
+  color: white;
 }
-.bg-uno{
-    background-color: grey;
-    
+.h2height {
+  font-weight: 700;
 }
-.bg-uno-uno{
-
-    margin-bottom: 50px;
+.bg-uno {
+  background-color: grey;
 }
-.bg-dos{
-    background-color: rgb(34, 33, 33);
+.bg-uno-uno {
+  margin-bottom: 50px;
 }
-.bg-tres{
-    background-color: grey;
+.bg-dos {
+  background-color: rgb(34, 33, 33);
 }
-.fa-whatsapp{
-    color: #25D366;
+.bg-tres {
+  background-color: grey;
 }
-.espaciofijo{
-    display: inline-block;
-    width: 75px;
+.fa-whatsapp {
+  color: #25d366;
 }
-.nodecoration{
-    color: white;
+.espaciofijo {
+  display: inline-block;
+  width: 75px;
 }
-footer{
-        width: 100%;
+.nodecoration {
+  color: white;
 }
-.contenido{
-    font-size: 0.9rem;
+footer {
+  width: 100%;
+}
+.contenido {
+  font-size: 0.9rem;
 }
 
-@media (max-width: 74px){
-    .art{
-        height: 220px;
-        width: 100%;
-    }
-    .reservas-centrado {
-        font-size: 3rem !important;
-    }
-
+@media (max-width: 749px) {
+  .art {
+    height: 220px;
+    width: 100%;
+  }
+  .reservas-centrado {
+    font-size: 3.5rem !important;
+  }
 }
-@media (min-width: 750px){
-    img{
-        height: 90vh;    
-    }
-
+@media (min-width: 750px) {
+  img {
+    height: 90vh;
+  }
 }
-.logo-up{
-    position: relative;
-    top: -15px !important;
+.logo-up {
+  position: relative;
+  top: -15px !important;
 }
 
-.marginizquierdo{
-    margin-left: 0px;
-    margin-right: 0px;
+.marginizquierdo {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
-.diaActivo{
-    background-color: rgb(34, 33, 33);
-    margin-left: -5px;
-    padding: 5px;;
+.diaActivo {
+  background-color: rgb(34, 33, 33);
+  margin-left: -5px;
+  padding: 5px;
 }
-.boton-flotante{
-    z-index: 10;
-    background-color: rgb(255, 255, 255, 0.6);
-    color: black;
-    font-size: 50px;
-    position: absolute;
-    text-decoration: none;
-    margin: auto;
-    top: 200px;
-    padding: 20px 80px;
-    border-radius: 30px;
-    font-weight: 500;
+.boton-flotante {
+  z-index: 10;
+  background-color: rgb(255, 255, 255, 0.6);
+  color: black;
+  font-size: 50px;
+  position: absolute;
+  text-decoration: none;
+  margin: auto;
+  top: 200px;
+  padding: 20px 80px;
+  border-radius: 30px;
+  font-weight: 500;
 }
 .contenedor-menu-navidad {
-    display: flex !important;
-    flex-direction: row;
-    justify-content: center;
-
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center;
 }
 @media only screen and (max-width: 576px) {
-    .boton-flotante {
-        padding: 10px 30px;
-        font-size: 30px;
-        animation: text-menu  3s infinite;
-        }
-
+  .boton-flotante {
+    padding: 10px 30px;
+    font-size: 30px;
+    animation: text-menu 3s infinite;
+  }
 }
 @keyframes text-menu {
-    from{
-        transform: scale(1.1);
-    }
-    to{
-        transform: scale(0.8);
-    }
-
-
-
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(0.8);
+  }
 }
 
-.reservas-centrado{
-        
-            text-decoration: none;
-            font-size: 6rem;
-            position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            /* margin: auto; */
-       
-            color: white;
-            background: rgb(141, 133, 133, 0.5);
-            margin: 20px;
-            padding: 30px;
-            border-radius: 30px;
+.reservas-centrado {
+  text-decoration: none;
+  font-size: 6rem;
+  position: absolute;
+  top: 50%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+  /* margin: auto; */
+
+  color: white;
+  background: rgb(141, 133, 133, 0.5);
+  margin: 20px;
+  padding: 30px;
+  border-radius: 30px;
 }
-.reservas-centrado:hover{
-            background: rgb(141, 133, 133, 0.7);
+.reservas-centrado:hover {
+  background: rgb(141, 133, 133, 0.7);
 }
