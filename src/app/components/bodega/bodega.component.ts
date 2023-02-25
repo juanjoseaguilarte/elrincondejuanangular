@@ -11,21 +11,23 @@ export class BodegaComponent implements OnInit {
   arrVinos: Vino[] = [];
   arrSecciones: any[] = [];
   arrUvas: any[] = [];
-  seccionActual: string = "Vino Por Copas";
+  seccionActual: string = 'Vino Por Copas';
+  total: number = 0;
   constructor(private vinosServices: VinosService) {}
 
   ngOnInit(): void {
     this.arrVinos = this.vinosServices.getAll('Vino Por Copas');
 
     this.arrSecciones = this.vinosServices.getAll();
-    
+
     this.reducirSecciones();
-    
+
     this.arrUvas = this.vinosServices.getAll();
-   
 
     this.reducirUvas();
 
+    this.total = this.vinosServices.getAll().length;
+    console.log('Tenemos ....  ' + this.total);
   }
   private reducirUvas() {
     this.arrUvas = this.arrUvas.reduce((acc, item) => {
@@ -34,7 +36,7 @@ export class BodegaComponent implements OnInit {
       }
       return acc;
     }, []);
-    //console.log('desde el pirmer ' + this.arrUvas);
+    
     this.arrUvas = [].concat.apply([], this.arrUvas);
     this.arrUvas = this.arrUvas.reduce((acc, item) => {
       if (!acc.includes(item)) {
@@ -42,7 +44,6 @@ export class BodegaComponent implements OnInit {
       }
       return acc;
     }, []);
-    
   }
 
   private reducirSecciones() {
@@ -69,6 +70,5 @@ export class BodegaComponent implements OnInit {
   getByFilter(pFilter: string) {
     this.arrVinos = this.vinosServices.getByFilter(pFilter);
     this.seccionActual = pFilter.toUpperCase();
-
   }
 }
